@@ -13,4 +13,32 @@ export const focusList:FocusItemProps[] = [
         imagem: '/hero-img.jpg',
         title: 'agronegocio'
     },
+    {
+        imagem: '/hero-img.jpg',
+        title: 'agronegocio'
+    },
+    {
+        imagem: '/hero-img.jpg',
+        title: 'agronegocio'
+    },
+    {
+        imagem: '/hero-img.jpg',
+        title: 'agronegocio'
+    },
+    {
+        imagem: '/hero-img.jpg',
+        title: 'agronegocio'
+    },
+    {
+        imagem: '/hero-img.jpg',
+        title: 'agronegocio'
+    },
+    {
+        imagem: '/hero-img.jpg',
+        title: 'agronegocio'
+    },
+    {
+        imagem: '/hero-img.jpg',
+        title: 'agronegocio'
+    },
 ] 

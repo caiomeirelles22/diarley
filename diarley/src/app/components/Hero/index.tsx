@@ -5,9 +5,9 @@ export function Hero() {
       <div className="w-full">
         <Image
         className="w-full"
-        src='/hero-img.jpg'
-        width={200}
-        height={100}
+        src='/perfil-paisagem.jpg'
+        width={3840}
+        height={2160}
         quality={100}
         alt="hero" />
         
