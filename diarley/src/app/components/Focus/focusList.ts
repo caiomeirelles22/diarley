@@ -1,6 +1,6 @@
-import { FocusItemProps } from "./FocusItems/FocusItem";
+import { focusItemProps } from "./FocusItems/FocusItem";
 
-export const focusList:FocusItemProps[] = [
+export const focusList:focusItemProps[] = [
     {
         imagem: '/next.svg',
         title: 'combate a fome'
@@ -15,30 +15,18 @@ export const focusList:FocusItemProps[] = [
     },
     {
         imagem: '/hero-img.jpg',
-        title: 'agronegocio'
+        title: 'Emprego e Renda'
     },
     {
         imagem: '/hero-img.jpg',
-        title: 'agronegocio'
+        title: 'Tecnologia e Inovação'
     },
     {
         imagem: '/hero-img.jpg',
-        title: 'agronegocio'
+        title: 'Saúde'
     },
     {
         imagem: '/hero-img.jpg',
-        title: 'agronegocio'
-    },
-    {
-        imagem: '/hero-img.jpg',
-        title: 'agronegocio'
-    },
-    {
-        imagem: '/hero-img.jpg',
-        title: 'agronegocio'
-    },
-    {
-        imagem: '/hero-img.jpg',
-        title: 'agronegocio'
-    },
+        title: 'Infraestrutura'
+    }
 ] 

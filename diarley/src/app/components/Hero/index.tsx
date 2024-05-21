@@ -4,7 +4,7 @@ export function Hero() {
   return ( 
       <div className="w-full">
         <Image
-        className="w-full"
+        className="w-full -mt-4"
         src='/perfil-paisagem.jpg'
         width={3840}
         height={2160}
