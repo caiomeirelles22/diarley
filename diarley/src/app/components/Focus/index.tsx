@@ -6,7 +6,7 @@ import { Anchor } from "../Anchor";
 
 export function Focus({focusItems}: FocusItemsProps) {
     return (
-        <div className="bg-blue-500 p-4 sm:p-6 flex flex-col gap-4 max-w-7xl mx-auto">
+        <div className="bg-sky-600 p-4 sm:p-6 flex flex-col gap-4 max-w-7xl mx-auto">
             <div className=" text-white w-full flex items-center justify-center flex-wrap gap-4">
                 <div className="flex flex-col ">
                     <h2 className="text-5xl">Diarley</h2>

@@ -3,21 +3,19 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import { Modal } from '../../Modal'; // ajuste o caminho conforme necessário
-import { FullScreenCarousel } from '../../FullScreenCarousel'; // ajuste o caminho conforme necessário
 
 interface ImageProps {
   src: string;
   alt: string;
 }
 
-interface CarouselProps {
+interface FullScreenCarouselProps {
   images: ImageProps[];
+  initialIndex: number;
 }
 
-export function Carousel({ images }: CarouselProps) {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isModalOpen, setIsModalOpen] = useState(false);
+export function FullScreenCarousel({ images, initialIndex }: FullScreenCarouselProps) {
+  const [currentIndex, setCurrentIndex] = useState(initialIndex);
 
   const prevSlide = () => {
     const isFirstSlide = currentIndex === 0;
@@ -31,12 +29,9 @@ export function Carousel({ images }: CarouselProps) {
     setCurrentIndex(newIndex);
   };
 
-  const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
-
   return (
-    <div className="relative w-full max-w-4xl mx-auto">
-      <div className="relative h-64 sm:h-96">
+    <div className="relative w-3/4 h-full mx-auto">
+      <div className="relative h-full">
         {images.map((image, index) => (
           <div
             key={index}
@@ -48,9 +43,7 @@ export function Carousel({ images }: CarouselProps) {
               src={image.src}
               alt={image.alt}
               layout="fill"
-              objectFit="cover"
-              onClick={openModal}
-              className="cursor-pointer"
+              objectFit="contain"
             />
           </div>
         ))}
@@ -67,19 +60,6 @@ export function Carousel({ images }: CarouselProps) {
       >
         <FaChevronRight />
       </button>
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-        {images.map((_, index) => (
-          <div
-            key={index}
-            className={`h-3 w-3 rounded-full ${
-              index === currentIndex ? 'bg-gray-800' : 'bg-gray-400'
-            }`}
-          ></div>
-        ))}
-      </div>
-      <Modal isOpen={isModalOpen} onClose={closeModal}>
-        <FullScreenCarousel images={images} initialIndex={currentIndex} />
-      </Modal>
     </div>
   );
 }

@@ -41,6 +41,37 @@
             }
         ],
         "slogan": "Seu espaço de beleza e bem-estar.",
-        "lat": "-23.5489"
+        "lat": "-23.5489",
+        "galeria": [
+            {
+                "src": "/perfil-paisagem.jpg",
+                "alt": "Combate a fome"
+            },
+            {
+                "src": "/perfil-paisagem.jpg",
+                "alt": "Combate a fome"
+            },
+            {
+                "src": "/perfil-paisagem.jpg",
+                "alt": "Combate a fome"
+            },
+            {
+                "src": "/perfil-paisagem.jpg",
+                "alt": "Combate a fome"
+            },
+            {
+                "src": "/perfil-paisagem.jpg",
+                "alt": "Combate a fome"
+            },
+            {
+                "src": "/perfil-paisagem.jpg",
+                "alt": "Combate a fome"
+            },
+            {
+                "src": "/perfil-retrato.jpg",
+                "alt": "Combate a fome"
+            }
+           
+        ]
     }
 ]
