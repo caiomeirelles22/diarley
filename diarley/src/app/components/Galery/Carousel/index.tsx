@@ -48,7 +48,7 @@ export function Carousel({ images }: CarouselProps) {
               src={image.src}
               alt={image.alt}
               layout="fill"
-              objectFit="cover"
+              objectFit="contain"
               onClick={openModal}
               className="cursor-pointer"
             />

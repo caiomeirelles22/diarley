@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export function Hero() {
   return ( 
-      <div className="w-full">
+      <div className="w-full -mt-4 ">
         <Image
-        className="w-full -mt-4"
-        src='/perfil-paisagem.jpg'
+        className="w-full"
+        src='/hero-horizontal.webp'
         width={3840}
         height={2160}
         quality={100}
