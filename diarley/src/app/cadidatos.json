@@ -2,7 +2,7 @@
     {   
         "candidato": "Diarley",
         "fotoPerfilPaisagem": "/perfil-paisagem.jpg",
-        "fotoPerfilRetrato": "/perfil-retrato.jpg",
+        "fotoPerfilRetrato": "/diarley-perfil-retrato.jpg",
         "fotoNomeCamara": "/next.svg",
         "sobreMimParagrafos": [
             "Sou Diarley instrutor Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi saepe laudantium veritatis inventore ab totam, velit, hic aut iure perferendis blanditiis obcaecati? Voluptas quaerat quisquam animi dolore explicabo consequuntur deleniti!",
@@ -44,23 +44,23 @@
         "lat": "-23.5489",
         "galeria": [
             {
-                "src": "/perfil-paisagem.jpg",
+                "src": "/diarley-e-filho.webp",
                 "alt": "Combate a fome"
             },
             {
-                "src": "/perfil-paisagem.jpg",
+                "src": "/diarley-perfil-retrato.jpg",
                 "alt": "Combate a fome"
             },
             {
-                "src": "/perfil-paisagem.jpg",
+                "src": "/familia-vertical.webp",
                 "alt": "Combate a fome"
             },
             {
-                "src": "/perfil-paisagem.jpg",
+                "src": "/hero-horizontal.webp",
                 "alt": "Combate a fome"
             },
             {
-                "src": "/perfil-paisagem.jpg",
+                "src": "/hero-img.jpg",
                 "alt": "Combate a fome"
             },
             {
