@@ -1,5 +1,5 @@
 [
-    {   
+    {
         "candidato": "Diarley",
         "fotoPerfilPaisagem": "/perfil-paisagem.jpg",
         "fotoPerfilRetrato": "/diarley-perfil-retrato.jpg",
@@ -9,7 +9,7 @@
             "Pai da Laura e da Sofia e companheiro da Natália.",
             "Minha vida toda sempre me dediquei a ajudar o proximo e decidi esse ano concorrer a Vereador na nossa cidade Campos dos Goytacazes!"
         ],
-       "oqueEsperar": "Na Câmara dos vereadores irei atuar pela reconstrução, e acreditamos que isso só será possível se ninguém ficar para trás. Por isso, trabalhamos por leis que tenham como horizonte o combate às desigualdades.",
+        "oqueEsperar": "Na Câmara dos vereadores irei atuar pela reconstrução, e acreditamos que isso só será possível se ninguém ficar para trás. Por isso, trabalhamos por leis que tenham como horizonte o combate às desigualdades.",
         "focos": [
             {
                 "imagem": "/next.svg",
@@ -71,7 +71,24 @@
                 "src": "/perfil-retrato.jpg",
                 "alt": "Combate a fome"
             }
-           
+        ],
+        "links": [
+            {
+                "link": "https://www.netvasco.com.br/",
+                "icon": "facebook"
+            },
+            {
+                "link": "https://www.facebook.com/diarley.barretodasilva.1",
+                "icon": "instagram"
+            },
+            {
+                "link": "https://www.facebook.com/diarley.barretodasilva.1",
+                "icon": "whatsApp"
+            },
+            {
+                "link": "https://www.facebook.com/diarley.barretodasilva.1",
+                "icon": "email"
+            }
         ]
     }
 ]
