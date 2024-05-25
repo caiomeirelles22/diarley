@@ -23,19 +23,19 @@ export const FormInput = forwardRef<HTMLInputElement, FormInputProps>(
          <div className="flex flex-1 flex-col items-start p-0 m-0 h-full text-left w-full ">
             {!!iconLeft && <>{iconLeft}</>}
             <div
-               className={`bg-acWhite box-border flex flex-1 self-stretch items-center py-2 px-4 h-10 w-full border border-solid rounded-md focus-within:border-brandB focus-within:ring-2 focus-within:ring-brandB focus-within:ring-inset ${
+               className={`bg-gray-50 box-border flex flex-1 self-stretch items-center py-2 px-4 h-10 w-full border border-solid rounded-md border-blue-300 focus-within:ring-2 focus-within:ring-blueborder-blue-300 focus-within:ring-inset ${
                   highlightOnFocus === 'error'
                      ? ' ring-red-500 ring-inset ring-2'
                      : 'border-gray-400'
                } `}
             >
                <fieldset className="flex flex-col gap-0.5 w-full mx-2 border-0">
-                  <span className="text-xs font-bold text">
+                  <span className="text-xs font-bold text-gray-700">
                      {label}
                   </span>
                   <div className="flex">
                      <input
-                        className="text-sm bg-transparent border-0 w-full p-0 focus:outline-none "
+                        className="text-sm bg-transparent border-0 w-full p-0 focus:outline-none placeholder:text-gray-400 text-gray-700 "
                         ref={ref}
                         type="text"
                         {...props}

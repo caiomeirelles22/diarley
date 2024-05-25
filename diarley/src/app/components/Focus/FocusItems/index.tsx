@@ -8,7 +8,7 @@ export function FocusItems({focusItems}:FocusItemsProps) {
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 items-start gap-6">
             {focusItems.map((item:focusItemProps, key) => (
-                <FocusItem key={key} imagem={item.imagem} title={item.title} />
+                <FocusItem key={key}  title={item.title} />
             ))}
         </div>
     );

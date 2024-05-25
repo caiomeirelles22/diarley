@@ -9,7 +9,11 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 export function Button({ children, onClick, className, ...rest }: ButtonProps) {
   return (
-    <button {...rest} onClick={onClick} className={twMerge('', className)}>
+    <button
+      {...rest}
+      onClick={onClick}
+      className={twMerge('bg-blue-900 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors', className)}
+    >
       {children}
     </button>
   );

@@ -23,7 +23,7 @@ export function Modal({ isOpen, onClose, children }: ModalProps) {
                     onInteractOutside={onClose}
                     onPointerDownOutside={onClose}
                 >
-                    <div className="relative bg-cyan-200 rounded-lg shadow-lg w-full h-[70vh] overflow-hidden">
+                    <div className="relative bg-blue-200 rounded-lg shadow-lg w-full h-[70vh] overflow-hidden">
                         <Dialog.Close>
                             <button
                                 onClick={onClose}

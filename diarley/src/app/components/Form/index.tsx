@@ -1,4 +1,4 @@
- 'use client'
+'use client'
 
 import React, { ComponentProps, ElementType } from 'react'
 import { zodResolver } from '@hookform/resolvers/zod'
@@ -6,7 +6,6 @@ import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 import { CheckBox } from './Checkbox'
 import { FormInput } from './FormInput'
-import { Button } from '../Button'
 import { phoneMask } from '@/app/functions/phoneMask'
 import { unmaskNumber } from '@/app/functions/unmaskNumber'
 
@@ -23,11 +22,11 @@ const websiteFormSchema = z.object({
         message: 'Você deve aceitar a política de privacidade',
     }),
     phoneNumber: z
-    .string()
-    .length(11, { message: 'Telefone inválido' })
-    .transform((phoneNumber) => {
-       return unmaskNumber(phoneNumber)
-    }),
+        .string()
+        .length(11, { message: 'Telefone inválido' })
+        .transform((phoneNumber) => {
+            return unmaskNumber(phoneNumber)
+        }),
     acceptEmails: z.boolean().optional(),
     acceptWhatsApp: z.boolean().optional(),
 })
@@ -52,12 +51,9 @@ export function Form({ type }: FormProps) {
 
     const handleMaskChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const { value } = event.target;
-
-        // Improved masking logic using a regular expression
         const phoneMask = /(\d{2})(\d{5})(\d{4})/;
         const maskedValue = value.replace(phoneMask, '($1) $2-$3');
 
-        // Update the form state with the masked value
         event.target.value = maskedValue;
     };
 
@@ -69,11 +65,11 @@ export function Form({ type }: FormProps) {
     return (
         <form
             style={{ margin: 'fit-content' }}
-            className="mx-auto flex flex-col gap-4 items-start justify-center border-2 border-solid border-gray-400 max-w-[40rem] p-6  rounded-lg"
+            className="text-white tracking-wider mx-auto flex flex-col gap-4 items-start justify-center border-2 border-solid border-gray-400 max-w-[40rem] p-6  rounded-lg"
             onSubmit={handleSubmit(sendFormData)}
         >
-            <h2 id="FormTitle">
-                Venha saber mais!
+            <h2 id="FormTitle" className='self-center text-xl text-blue-900 font-bold'>
+                Venha fazer parte da mudança!!
             </h2>
 
             <FormInput
@@ -95,23 +91,21 @@ export function Form({ type }: FormProps) {
                 errorMessage={errors.email?.message}
             />
             <FormInput
-                
+
                 placeholder="(00) 00000-0000"
                 label="Celular"
                 type="text"
                 {...register('phoneNumber', {
-                   setValueAs: (value) => {
-                      return unmaskNumber(value)
-                   },
-                   onChange: (event) => {
-                      event.target.value = phoneMask(event.target.value)
-                   },
+                    setValueAs: (value) => {
+                        return unmaskNumber(value)
+                    },
+                    onChange: (event) => {
+                        event.target.value = phoneMask(event.target.value)
+                    },
                 })}
                 errorMessage={errors.phoneNumber?.message}
-                
+
             />
-
-
 
             <CheckBox
                 id="form-allow-notifications-emails"
@@ -126,18 +120,17 @@ export function Form({ type }: FormProps) {
                 Receba notificações por whatsApp
             </CheckBox>
 
-
-            <Button
+            <button
+                className='bg-blue-900 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors'
                 type="submit"
                 name="Botao submeter o formulário"
                 id="form-button-submit-form"
-
             >
                 Enviar
-            </Button>
+            </button>
         </form>
     )
-} 
+}
 
 /* 'use client';
 import React, { ComponentProps, ElementType } from 'react';
