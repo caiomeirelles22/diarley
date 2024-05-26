@@ -13,7 +13,7 @@ export function FocusItemsIcons({ icon }: { icon: string }) {
             
         case 'Mobilidade urbana':
             return <GiBusStop size={40}/>;
-        case 'Agronegocio':
+        case 'Agronegócio':
             return <GiFarmer size={40}/>;
         case 'Emprego e Renda':
             return <FaMoneyBillTrendUp size={40}/>;
