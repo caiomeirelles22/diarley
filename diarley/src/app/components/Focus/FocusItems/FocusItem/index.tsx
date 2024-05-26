@@ -7,11 +7,11 @@ export interface focusItemProps {
 
 export function FocusItem({title}:focusItemProps) {
     return (
-        <div className="flex bg-amber-300 w-fit pb-4 px-4 gap-2 rounded-md sm:">
-            <div className="flex justify-center items-center bg-blue-300 w-14 h-14 sm:size-24 rounded-full -mt-5">
+        <div className="flex bg-amber-300 w-full max-w-[500px] py-2 px-4 gap-2 rounded-md sm:">
+            <div className="flex justify-center items-center bg-blue-300 w-14 h-14 sm:size-20 rounded-full">
                 <FocusItemsIcons icon={title}/>
             </div>
-            <p className="text-xl sm:text-4xl text-gray-900">{title}</p>
+            <p className="text-xl sm:text-3xl text-gray-900 self-center mx-auto">{title}</p>
         </div>
     )
 }

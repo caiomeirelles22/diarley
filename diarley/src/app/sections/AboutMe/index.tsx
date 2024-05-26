@@ -8,7 +8,7 @@ interface AboutMeProps {
 
 export function AboutMe({ fotoRetrato, paragrafos }: AboutMeProps) {
     return (
-        <div className="bg-gray-100 p-4 sm:p-6 text-white w-full flex items-center gap-4 flex-wrap justify-between max-w-7xl mx-auto rounded-md">
+        <div id="about-me" className="bg-gray-100 p-4 sm:p-6 text-white w-full flex items-center gap-4 flex-wrap justify-between max-w-7xl mx-auto rounded-md">
             <div className="flex justify-center min-w-80 w-full sm:w-auto max-h-[703px] border-b-4 border-gray-400 border-solid pb-4 sm:border-b-0 sm:border-r-2 sm:pr-6 mx-auto ">
                 <Image
                     src={fotoRetrato}

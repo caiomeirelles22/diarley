@@ -1,5 +1,6 @@
 "use client";
 
+import { Anchor } from '@/app/components/Anchor';
 import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
@@ -15,23 +16,27 @@ export function NavBar() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between py-4">
                     <div className="flex items-center">
-                        <a href="#" className="text-xl font-bold">
-                            Logo
-                        </a>
+                        <Anchor href="#" className="text-xl font-bold italic  border-0 p-0">
+                            Diarley
+                        </Anchor>
                     </div>
                     <div className="hidden md:flex space-x-4">
-                        <a href="#" className="hover:underline">
-                            Item 1
-                        </a>
-                        <a href="#" className="hover:underline">
-                            Item 2
-                        </a>
-                        <a href="#" className="hover:underline">
-                            Item 3
-                        </a>
-                        <a href="#" className="hover:underline">
-                            Item 4
-                        </a>
+                        <Anchor href="about-me" className="hover:underline border-0 p-0" >
+                            Sobre Mim
+                        </Anchor>
+                        <Anchor href="focus" className="hover:underline border-0 p-0" >
+                            Focos
+                        </Anchor>
+                        <Anchor href="galery" className="hover:underline border-0 p-0" >
+                            Galeria
+                        </Anchor>
+                        <Anchor href="social-media" className="hover:underline border-0 p-0" >
+                            Redes Sociais
+                        </Anchor>
+                        <Anchor href="form-section" className="hover:underline border-0 p-0" >
+                            Faça Parte!
+                        </Anchor>
+
                     </div>
                     <div className="md:hidden">
                         <button onClick={toggleMenu}>
@@ -42,19 +47,22 @@ export function NavBar() {
             </div>
             {isOpen && (
                 <div className="md:hidden transition-opacity duration-300">
-                    <div className={`px-2 pt-2 pb-3 space-y-1 max-h-0 overflow-hidden ${isOpen ? 'max-h-full opacity-100' : 'max-h-0 opacity-0'}`}>
-                        <a href="#" className="block hover:bg-blue-800 px-3 py-2 rounded-md">
-                            Item 1
-                        </a>
-                        <a href="#" className="block hover:bg-blue-800 px-3 py-2 rounded-md">
-                            Item 2
-                        </a>
-                        <a href="#" className="block hover:bg-blue-800 px-3 py-2 rounded-md">
-                            Item 3
-                        </a>
-                        <a href="#" className="block hover:bg-blue-800 px-3 py-2 rounded-md">
-                            Item 4
-                        </a>
+                    <div className={`px-2 pt-2 pb-3 pl-4 space-y-1 max-h-0 overflow-hidden flex flex-col gap-1 ${isOpen ? 'max-h-full opacity-100' : 'max-h-0 opacity-0'}`}>
+                        <Anchor href="about-me" className="hover:underline  text-left w-full border-0" >
+                            Sobre Mim
+                        </Anchor>
+                        <Anchor href="focus" className="hover:underline  w-full border-0" >
+                            Focos
+                        </Anchor>
+                        <Anchor href="galery" className="hover:underline  w-full border-0" >
+                            Galeria
+                        </Anchor>
+                        <Anchor href="social-media" className="hover:underline  w-full border-0" >
+                            Redes Sociais
+                        </Anchor>
+                        <Anchor href="form-section" className="hover:underline  w-full border-0" >
+                            Faça Parte!
+                        </Anchor>
                     </div>
                 </div>
             )}

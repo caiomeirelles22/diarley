@@ -50,13 +50,13 @@ export function FullScreenCarousel({ images, initialIndex }: FullScreenCarouselP
       </div>
       <button
         onClick={prevSlide}
-        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-700 bg-opacity-50 text-white p-2 rounded-full"
+        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-blue-900 bg-opacity-75 text-white p-2 rounded-full hover:bg-blue-700"
       >
         <FaChevronLeft />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-700 bg-opacity-50 text-white p-2 rounded-full"
+        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-blue-900 bg-opacity-75 text-white p-2 rounded-full hover:bg-blue-700"
       >
         <FaChevronRight />
       </button>

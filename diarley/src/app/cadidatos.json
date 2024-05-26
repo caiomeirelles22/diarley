@@ -1,7 +1,7 @@
 [
     {
         "candidato": "Diarley",
-        "fotoPerfilPaisagem": "/perfil-paisagem.jpg",
+        "fotoPerfilPaisagem": "/onibus-cortada.jpg",
         "fotoPerfilRetrato": "/diarley-perfil-retrato.jpg",
         "fotoNomeCamara": "/next.svg",
         "sobreMimParagrafos": [
@@ -20,23 +20,23 @@
                 "title": "Mobilidade urbana"
             },
             {
-                "imagem": "/hero-img.jpg",
+                "imagem": "/next.svg",
                 "title": "Agronegocio"
             },
             {
-                "imagem": "/hero-img.jpg",
+                "imagem": "/next.svg",
                 "title": "Emprego e Renda"
             },
             {
-                "imagem": "/hero-img.jpg",
+                "imagem": "/next.svg",
                 "title": "Tecnologia e Inovação"
             },
             {
-                "imagem": "/hero-img.jpg",
+                "imagem": "/next.svg",
                 "title": "Saúde"
             },
             {
-                "imagem": "/hero-img.jpg",
+                "imagem": "/next.svg",
                 "title": "Infraestrutura"
             }
         ],
@@ -45,6 +45,10 @@
         "galeria": [
             {
                 "src": "/diarley-e-filho.webp",
+                "alt": "Combate a fome"
+            },
+            {
+                "src": "/onibus-cortada.jpg",
                 "alt": "Combate a fome"
             },
             {
@@ -60,17 +64,13 @@
                 "alt": "Combate a fome"
             },
             {
-                "src": "/hero-img.jpg",
+                "src": "/next.svg",
                 "alt": "Combate a fome"
             },
             {
                 "src": "/perfil-paisagem.jpg",
                 "alt": "Combate a fome"
-            },
-            {
-                "src": "/perfil-retrato.jpg",
-                "alt": "Combate a fome"
-            }
+            }          
         ],
         "links": [
             {
@@ -89,6 +89,18 @@
                 "link": "https://www.facebook.com/diarley.barretodasilva.1",
                 "icon": "email"
             }
-        ]
+        ],
+        "infosPessoais": {
+            "nomeCompleto" : "Diarley Barreto Silva",
+            "dataNascimento": "20/10/2002",
+            "naturalidade": "Campos dos Goytacazes, RJ",
+            "pai": "José Augusto Silva",
+            "mae": "Maria Barreto Silva",
+            "filhos": "Enzo e Valentina",
+            "profissao": "Instrutor",
+            "formacoes": [
+                "Contador", "Segurança armada", "Instrutor"
+            ]
+        }
     }
 ]
