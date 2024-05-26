@@ -4,14 +4,14 @@ import { MdEmail } from "react-icons/md";
 
 export function SocialIcons({ icon }: { icon: string }) {
     switch (icon) {
-        case 'facebook':
+        case 'Facebook':
             return <FaFacebook/>;
             
-        case 'instagram':
+        case 'Instagram':
             return <FaInstagram/>;
-        case 'whatsApp':
+        case 'WhatsApp':
             return <FaWhatsapp/>;
-        case 'email':
+        case 'Email':
             return <MdEmail/>;
 
         default:
