@@ -117,7 +117,7 @@ export function Form({ type }: FormProps) {
                 id="form-allow-notifications-whatsApp"
                 {...register('acceptWhatsApp')}
             >
-                Receba notificações por whatsApp
+                Receba notificações por WhatsApp
             </CheckBox>
 
             <button

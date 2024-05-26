@@ -7,7 +7,7 @@
         "sobreMimParagrafos": [
             "Sou Diarley instrutor Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi saepe laudantium veritatis inventore ab totam, velit, hic aut iure perferendis blanditiis obcaecati? Voluptas quaerat quisquam animi dolore explicabo consequuntur deleniti!",
             "Pai da Laura e da Sofia e companheiro da Natália.",
-            "Minha vida toda sempre me dediquei a ajudar o proximo e decidi esse ano concorrer a Vereador na nossa cidade Campos dos Goytacazes!"
+            "Minha vida toda sempre me dediquei a ajudar o próximo e decidi esse ano concorrer a Vereador na nossa cidade Campos dos Goytacazes!"
         ],
         "oqueEsperar": "Na Câmara dos vereadores irei atuar pela reconstrução, e acreditamos que isso só será possível se ninguém ficar para trás. Por isso, trabalhamos por leis que tenham como horizonte o combate às desigualdades.",
         "focos": [
@@ -21,7 +21,7 @@
             },
             {
                 "imagem": "/next.svg",
-                "title": "Agronegocio"
+                "title": "Agronegócio"
             },
             {
                 "imagem": "/next.svg",
@@ -70,7 +70,7 @@
             {
                 "src": "/perfil-paisagem.jpg",
                 "alt": "Combate a fome"
-            }          
+            }
         ],
         "links": [
             {
@@ -91,7 +91,7 @@
             }
         ],
         "infosPessoais": {
-            "nomeCompleto" : "Diarley Barreto Silva",
+            "nomeCompleto": "Diarley Barreto Silva",
             "dataNascimento": "20/10/2002",
             "naturalidade": "Campos dos Goytacazes, RJ",
             "pai": "José Augusto Silva",
@@ -99,7 +99,9 @@
             "filhos": "Enzo e Valentina",
             "profissao": "Instrutor",
             "formacoes": [
-                "Contador", "Segurança armada", "Instrutor"
+                "Contador",
+                "Segurança armada",
+                "Instrutor"
             ]
         }
     }
