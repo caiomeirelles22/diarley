@@ -75,19 +75,19 @@
         "links": [
             {
                 "link": "https://www.netvasco.com.br/",
-                "icon": "facebook"
+                "icon": "Facebook"
             },
             {
                 "link": "https://www.facebook.com/diarley.barretodasilva.1",
-                "icon": "instagram"
+                "icon": "Instagram"
             },
             {
                 "link": "https://www.facebook.com/diarley.barretodasilva.1",
-                "icon": "whatsApp"
+                "icon": "WhatsApp"
             },
             {
                 "link": "https://www.facebook.com/diarley.barretodasilva.1",
-                "icon": "email"
+                "icon": "Email"
             }
         ],
         "infosPessoais": {
