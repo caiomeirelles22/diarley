@@ -11,7 +11,7 @@ export function Focus({focusItems}: FocusItemsProps) {
                     <h2 className="text-5xl">Diarley</h2>
                     <h2 className="text-2xl">Na Câmara</h2>
                 </div>
-                <div className="w-fit min-w-80 flex flex-col gap-2 text-2xl sm:text-3xl">
+                <div className="w-fit min-w-80 flex flex-col gap-2 text-base sm:text-xl">
                     <h2 className="text-blue-900">Oque esperar de mim?</h2>
                     <p className="text-gray-900">Na Câmara dos vereadores irei atuar pela reconstrução, e acreditamos que isso só será possível se ninguém ficar para trás. Por isso, trabalhamos por leis que tenham como horizonte o combate às desigualdades.</p>
                     <p className="text-gray-900">Confira as principais iniciativas do mandato:</p>

@@ -11,7 +11,7 @@ export function FocusItem({title}:focusItemProps) {
             <div className="flex justify-center items-center bg-blue-300 w-14 h-14 sm:size-20 rounded-full">
                 <FocusItemsIcons icon={title}/>
             </div>
-            <p className="text-xl sm:text-3xl text-gray-900 self-center mx-auto">{title}</p>
+            <p className="text-base sm:text-xl text-gray-900 self-center mx-auto">{title}</p>
         </div>
     )
 }
