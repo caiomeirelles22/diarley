@@ -23,11 +23,11 @@ export function Modal({ isOpen, onClose, children }: ModalProps) {
                     onInteractOutside={onClose}
                     onPointerDownOutside={onClose}
                 >
-                    <div className="relative bg-[#F2F2F2] rounded-lg shadow-lg w-full h-[70vh] overflow-hidden">
+                    <div className="relative bg-[#113859] py-4 rounded-lg shadow-lg w-full h-[70vh] overflow-hidden">
                         <Dialog.Close>
                             <button
                                 onClick={onClose}
-                                className="text-[#F2F2F2] bg-[#113859] hover:bg-[#011640] p-4 text-base focus:shadow-[#113859] absolute top-[10px] right-[10px] inline-flex h-[25px] w-[25px] appearance-none items-center justify-center rounded-full focus:shadow-[0_0_0_2px] focus:outline-none"
+                                className="text-[#F2F2F2] bg-[#113859] hover:bg-[#011640] p-2 text-base focus:shadow-[#113859] absolute top-[10px] right-[10px] inline-flex h-[25px] w-[25px] appearance-none items-center justify-center rounded-full focus:shadow-[0_0_0_2px] focus:outline-none"
                             >
                                 <h1 className='text-2xl'>X</h1>
                             </button>
