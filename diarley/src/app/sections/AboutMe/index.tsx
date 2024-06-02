@@ -8,8 +8,8 @@ interface AboutMeProps {
 
 export function AboutMe({ fotoRetrato, paragrafos }: AboutMeProps) {
     return (
-        <div id="about-me" className="bg-gray-100 p-4 sm:p-6 text-white w-full flex items-center gap-4 flex-wrap justify-between max-w-7xl mx-auto rounded-md">
-            <div className="flex justify-center min-w-80 w-full sm:w-auto max-h-[703px] border-b-4 border-gray-400 border-solid pb-4 sm:border-b-0 sm:border-r-2 sm:pr-6 mx-auto ">
+        <div id="about-me" className="bg-[#F2F2F2] p-4 sm:p-6 text-white w-full flex items-center gap-4 flex-wrap justify-between max-w-7xl mx-auto rounded-md">
+            <div className="flex justify-center min-w-80 w-full sm:w-auto max-h-[703px] border-b-4 border-[#113859] border-solid pb-4 sm:border-b-0 sm:border-r-2 sm:pr-6 mx-auto ">
                 <Image
                     src={fotoRetrato}
                     className="h-full rounded-md sm:rounded-full"
@@ -19,12 +19,12 @@ export function AboutMe({ fotoRetrato, paragrafos }: AboutMeProps) {
                     alt="hero"
                 />  
             </div>
-            <div className="w-fit min-w-80 flex flex-col gap-4 max-w-xl text-base sm:text-xl mx-auto">
-                <h2 className="text-blue-900 font-bold">Sobre mim!</h2>
+            <div className="w-fit min-w-80 flex flex-col gap-4 max-w-xl text-base sm:text-xl mx-auto h-auto">
+                <h2 className="text-[#113859] font-bold">Sobre mim!</h2>
                 {paragrafos.map((paragrafo, key) => (
-                    <p key={key} className="text-gray-900">{paragrafo}</p>
+                    <p key={key} className="text-[#0D0D0D]">{paragrafo}</p>
                 ))}
-                <Anchor href="form-section" className="text-base">
+                <Anchor href="form-section" className="text-base text-[#F2F2F2] mt-auto">
                     Saiba Mais!
                 </Anchor>
             </div>

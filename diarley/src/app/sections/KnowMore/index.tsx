@@ -7,7 +7,7 @@ interface knowMoreProps {
 
 export function KnowMore({ knowImage }: knowMoreProps) {
     return (
-        <div id="form-section" className="bg-gray-100 p-4 sm:p-6 grid grid-cols-1 sm:grid-cols-2 gap-2 max-w-7xl mx-auto w-full rounded-md items-center">
+        <div id="form-section" className="bg-[#F2F2F2] p-4 sm:p-6 grid grid-cols-1 sm:grid-cols-2 gap-2 max-w-7xl mx-auto w-full rounded-md items-center">
             <div className="mx-auto">
                 <Image
                     src={knowImage}

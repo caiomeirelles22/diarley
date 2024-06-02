@@ -12,28 +12,28 @@ export function NavBar() {
     };
 
     return (
-        <nav className="bg-blue-900 text-white">
+        <nav className="bg-[#113859] text-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between py-4">
                     <div className="flex items-center">
-                        <Anchor href="#" className="text-xl font-bold italic  border-0 p-0">
+                        <Anchor href="#" className="text-xl font-bold italic  border-0 p-0 bg-transparent">
                             Diarley
                         </Anchor>
                     </div>
                     <div className="hidden md:flex space-x-4">
-                        <Anchor href="about-me" className="hover:underline border-0 p-0" >
+                        <Anchor href="about-me" className="hover:underline border-0 p-0 bg-transparent" >
                             Sobre Mim
                         </Anchor>
-                        <Anchor href="focus" className="hover:underline border-0 p-0" >
+                        <Anchor href="focus" className="hover:underline border-0 p-0 bg-transparent" >
                             Focos
                         </Anchor>
-                        <Anchor href="galery" className="hover:underline border-0 p-0" >
+                        <Anchor href="galery" className="hover:underline border-0 p-0 bg-transparent" >
                             Galeria
                         </Anchor>
-                        <Anchor href="social-media" className="hover:underline border-0 p-0" >
+                        <Anchor href="social-media" className="hover:underline border-0 p-0 bg-transparent" >
                             Redes Sociais
                         </Anchor>
-                        <Anchor href="form-section" className="hover:underline border-0 p-0" >
+                        <Anchor href="form-section" className="hover:underline border-0 p-0 bg-transparent" >
                             Faça Parte!
                         </Anchor>
 

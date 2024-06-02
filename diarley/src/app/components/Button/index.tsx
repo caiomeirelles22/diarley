@@ -12,7 +12,7 @@ export function Button({ children, onClick, className, ...rest }: ButtonProps) {
     <button
       {...rest}
       onClick={onClick}
-      className={twMerge('bg-blue-900 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors', className)}
+      className={twMerge('bg-[#011640] text-white py-2 px-4 rounded-md hover:bg-[#113859] transition-colors', className)}
     >
       {children}
     </button>
