@@ -11,31 +11,24 @@
         "oqueEsperar": "Na Câmara dos vereadores irei atuar pela reconstrução, e acreditamos que isso só será possível se ninguém ficar para trás. Por isso, trabalhamos por leis que tenham como horizonte o combate às desigualdades.",
         "focos": [
             {
-                "imagem": "/next.svg",
                 "title": "Combate a fome"
             },
             {
-                "imagem": "/vercel.svg",
                 "title": "Mobilidade urbana"
             },
             {
-                "imagem": "/next.svg",
                 "title": "Agronegócio"
             },
             {
-                "imagem": "/next.svg",
                 "title": "Emprego e Renda"
             },
             {
-                "imagem": "/next.svg",
                 "title": "Tecnologia e Inovação"
             },
             {
-                "imagem": "/next.svg",
                 "title": "Saúde"
             },
             {
-                "imagem": "/next.svg",
                 "title": "Infraestrutura"
             }
         ],
@@ -44,31 +37,31 @@
         "galeria": [
             {
                 "src": "/diarley-e-filho.webp",
-                "alt": "Combate a fome"
+                "alt": "foto da galeria"
             },
             {
                 "src": "/onibus-cortada.jpg",
-                "alt": "Combate a fome"
+                "alt": "foto da galeria"
             },
             {
                 "src": "/diarley-perfil-retrato.jpg",
-                "alt": "Combate a fome"
+                "alt": "foto da galeria"
             },
             {
                 "src": "/familia-vertical.webp",
-                "alt": "Combate a fome"
+                "alt": "foto da galeria"
             },
             {
                 "src": "/hero-horizontal.webp",
-                "alt": "Combate a fome"
+                "alt": "foto da galeria"
             },
             {
-                "src": "/next.svg",
-                "alt": "Combate a fome"
+                "src": "/diarley2.jpg",
+                "alt": "foto da galeria"
             },
             {
-                "src": "/perfil-paisagem.jpg",
-                "alt": "Combate a fome"
+                "src": "/diarley3.jpg",
+                "alt": "foto da galeria"
             }
         ],
         "links": [
