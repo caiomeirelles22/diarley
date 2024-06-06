@@ -21,7 +21,7 @@ export const Anchor: React.FC<AnchorProps> = ({ children, href, className }) => 
   return (
     <a
       href={`#${href}`} 
-      className={twMerge('border border-solid border-gray-800 rounded-md p-2 bg-[#011640] text-white w-fit mx-auto hover:bg-[#113859] transition-colors', className)}
+      className={twMerge('border border-solid border-[#191013] rounded-md p-2 bg-[#243a69] text-[#f4f4f2] w-fit mx-auto hover:bg-[#5b88a5] transition-colors', className)}
       onClick={handleClick}
     >
       {children}

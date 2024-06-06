@@ -68,7 +68,7 @@ export function Form({ type }: FormProps) {
             className="text-white tracking-wider mx-auto flex flex-col gap-4 items-start justify-center border-2 border-solid border-gray-400 max-w-[40rem] p-6  rounded-lg"
             onSubmit={handleSubmit(sendFormData)}
         >
-            <h2 id="FormTitle" className='self-center text-xl text-[#011640] font-bold'>
+            <h2 id="FormTitle" className='self-center text-xl text-[#243a69] font-bold'>
                 Venha fazer parte da mudança!!
             </h2>
 
@@ -121,7 +121,7 @@ export function Form({ type }: FormProps) {
             </CheckBox>
 
             <button
-                className='bg-[#011640] text-white py-2 px-4 rounded-md hover:bg-[#113859] transition-colors'
+                className='bg-[#243a69] text-white py-2 px-4 rounded-md hover:bg-[#5b88a5] transition-colors'
                 type="submit"
                 name="Botao submeter o formulário"
                 id="form-button-submit-form"

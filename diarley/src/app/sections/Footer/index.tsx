@@ -11,7 +11,7 @@ interface footerProps {
 
 export function Footer({ links }: footerProps) {
     return (
-        <footer className="bg-[#011640] text-white py-6 px-2">
+        <footer className="bg-[#243a69] text-white py-6 px-2">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-xs sm:text-sm">
                 <h2 className=" font-bold w-full text-center">Diarley Barreto</h2>
                 <div className='flex flex-wrap sm:justify-around gap-1 items-center'>

@@ -2,7 +2,7 @@
 
 import { ReactNode } from 'react';
 import * as Dialog from '@radix-ui/react-dialog';
-import { FaTimes } from 'react-icons/fa';
+
 
 interface ModalProps {
     isOpen: boolean;
@@ -23,11 +23,11 @@ export function Modal({ isOpen, onClose, children }: ModalProps) {
                     onInteractOutside={onClose}
                     onPointerDownOutside={onClose}
                 >
-                    <div className="relative bg-[#113859] py-4 rounded-lg shadow-lg w-full h-[70vh] overflow-hidden">
-                        <Dialog.Close>
+                    <div className="relative bg-[#5b88a5] sm:bg-[#243a69] pt-4 rounded-lg shadow-lg w-full h-[70vh] overflow-hidden">
+                        <Dialog.Close asChild>
                             <button
                                 onClick={onClose}
-                                className="text-[#F2F2F2] bg-[#113859] hover:bg-[#011640] p-2 text-base focus:shadow-[#113859] absolute top-[10px] right-[10px] inline-flex h-[25px] w-[25px] appearance-none items-center justify-center rounded-full focus:shadow-[0_0_0_2px] focus:outline-none"
+                                className="text-[#FFF] hover:bg-[#5b88a5] absolute  top-1 sm:top-[20px] right-2 sm:right-[40px] inline-flex h-[25px] w-[25px] appearance-none items-center justify-center rounded-full border-0 focus:outline-none p-4"
                             >
                                 <h1 className='text-2xl'>X</h1>
                             </button>

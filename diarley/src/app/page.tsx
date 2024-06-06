@@ -11,7 +11,7 @@ import candidatos from '@/app/cadidatos.json'
 
 export default function Home() {
   return (
-    <div className="w-full flex flex-col gap-4 sm:gap-2 bg-[#84898C]">
+    <div className="w-full flex flex-col gap-4 sm:gap-2 bg-[#5b88a5]">
       <NavBar />
       <Hero img={candidatos[0].fotoPerfilPaisagem} height={2592} width={4320} />
       <AboutMe fotoRetrato={candidatos[0].fotoPerfilRetrato} paragrafos={candidatos[0].sobreMimParagrafos} />
