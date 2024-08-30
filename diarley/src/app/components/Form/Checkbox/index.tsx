@@ -26,7 +26,7 @@ export const CheckBox = forwardRef<HTMLInputElement, ICheckBoxProps>(
     ref,
   ) => {
     return (
-      <div className="flex flex-col items-start p-0 m-0 text-gray-700">
+      <div className="flex flex-col items-start p-0 m-0 text-gray-700 text-sm">
         <div className="flex items-center gap-2">
           <Root
             className={`w-[1.125rem] h-[1.125rem] rounded-md cursor-pointer overflow-hidden box-border flex items-center content-center border border-solid border-gray-400 hover:border-blue-500 data-[state=checked]:bg-blue-500`}
