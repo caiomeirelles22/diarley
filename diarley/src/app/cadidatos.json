@@ -2,7 +2,7 @@
     {
         "candidato": "Diarley",
         "fotoPerfilPaisagem": "/onibus-cortada.jpg",
-        "fotoPerfilRetrato": "/diarley-perfil-retrato.jpg",
+        "fotoPerfilRetrato": "/diarley-e-wlad.jpeg",
         "fotoNomeCamara": "/next.svg",
         "sobreMimParagrafos": [
             "Sou Diarley instrutor Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi saepe laudantium veritatis inventore ab totam, velit, hic aut iure perferendis blanditiis obcaecati? Voluptas quaerat quisquam animi dolore explicabo consequuntur deleniti!",
@@ -91,6 +91,14 @@
         "lat": "-23.5489",
         "galeria": [
             {
+                "src": "/diarley-e-wlad.jpeg",
+                "alt": "foto da galeria"
+            },
+            {
+                "src": "/diarley4.jpeg",
+                "alt": "foto da galeria"
+            },
+            {
                 "src": "/diarley-e-filho.webp",
                 "alt": "foto da galeria"
             },
@@ -118,6 +126,7 @@
                 "src": "/diarley3.jpg",
                 "alt": "foto da galeria"
             }
+
         ],
         "links": [
             {
