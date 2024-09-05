@@ -7,6 +7,7 @@ import { SocialMedias } from "./sections/SocialMedias";
 import { Footer } from "./sections/Footer";
 import { NavBar } from "./sections/NavBar";
 import candidatos from '@/app/cadidatos.json'
+import { Jobs } from "./sections/Jobs";
 
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <AboutMe fotoRetrato={candidatos[0].fotoPerfilRetrato} paragrafos={candidatos[0].sobreMimParagrafos} />
       <Focus focusItems={candidatos[0].focos} />
       <Galery images={candidatos[0].galeria} />
+      <Jobs />
       <SocialMedias links={candidatos[0].links} />
       <KnowMore knowImage={candidatos[0].fotoPerfilRetrato} />
       <Footer links={candidatos[0].links}/>
