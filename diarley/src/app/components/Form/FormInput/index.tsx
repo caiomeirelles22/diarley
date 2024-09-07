@@ -17,11 +17,11 @@ export const FormInput = forwardRef<HTMLInputElement, FormInputProps>(
       { iconLeft, label, highlightOnFocus, errorMessage, type, ...props },
       ref,
    ) => {
-      console.log(highlightOnFocus)
+      
 
       return (
          <div className="flex flex-1 flex-col items-start p-0 m-0 h-full text-left w-full ">
-            {!!iconLeft && <>{iconLeft}</>}
+           
             <div
                className={`bg-gray-50 box-border flex flex-1 self-stretch items-center py-2 px-4 h-10 w-full border border-solid rounded-md border-blue-300 focus-within:ring-2 focus-within:ring-blueborder-blue-300 focus-within:ring-inset ${
                   highlightOnFocus === 'error'
@@ -29,6 +29,7 @@ export const FormInput = forwardRef<HTMLInputElement, FormInputProps>(
                      : 'border-gray-400'
                } `}
             >
+                {iconLeft && <>{iconLeft}</>}
                <fieldset className="flex flex-col gap-0.5 w-full mx-2 border-0">
                   <span className="text-xs font-bold text-gray-700">
                      {label}
@@ -37,7 +38,7 @@ export const FormInput = forwardRef<HTMLInputElement, FormInputProps>(
                      <input
                         className="text-sm bg-transparent border-0 w-full p-0 focus:outline-none placeholder:text-gray-400 text-gray-700 "
                         ref={ref}
-                        type="text"
+                        type={type}
                         {...props}
                      />
                   </div>

@@ -35,7 +35,6 @@ type WebsiteFormSchema = z.infer<typeof websiteFormSchema>
 
 interface FormProps extends ComponentProps<typeof FormInput> {
     as?: ElementType
-
 }
 
 export function Form({ type }: FormProps) {
