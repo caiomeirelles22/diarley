@@ -11,11 +11,15 @@ import { Button } from "@/app/components/Button";
 import { FileInput } from "./Input/FileInput";
 import { Modal } from "@/app/components/Modal";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export function Form() {
+    const [value, setValue] = useState('')
+    const [isFocused, setIsFocused] = useState(false)
     const MAX_FILE_SIZE = 2000000;
     const ACCEPTED_IMAGE_TYPES = ["image/jpeg", "image/jpg", "image/png", "image/webp", "application/pdf", "application/msword", "application/vnd.openxmlformats-officedocument.wordprocessingml.document"];
     const [modalIsOpen, setModalIsOpen] = useState(false)
+    const router = useRouter()
 
     const formSchema = z.object({
         fullName: z.string().min(3, { message: "Coloque seu nome" }),
@@ -67,6 +71,8 @@ export function Form() {
 
             const result = await response.json();
             console.log("Success:", result);
+            reset()
+            router.push('/Jobs/submited')
         } catch (error) {
             console.error("Error:", error);
         }
@@ -84,7 +90,7 @@ export function Form() {
             >
                 <Input
                     maxLength={60}
-                    label="Nome"
+                    label="Nome:"
                     placeholder="João José"
                     {...register("fullName")}
                     barSize="full"
@@ -92,7 +98,7 @@ export function Form() {
                 />
                 <Input
                     maxLength={60}
-                    label="Email"
+                    label="Email:"
                     placeholder="Caso não possua, deixe em branco"
                     {...register("email")}
                     barSize="full"
@@ -101,7 +107,7 @@ export function Form() {
 
                 <Input
                     maxLength={15}
-                    label="Celular"
+                    label="Celular:"
                     placeholder="(99) 99999-9999"
                     barSize="full"
                     errorMessage={errors.phoneNumber?.message}
@@ -116,25 +122,53 @@ export function Form() {
                 />
 
                 <FileInput
-                    label="Currículo"
+                    label="Currículo:"
                     barSize="full"
                     errorMessage={errors.curriculo?.message?.toString()}
-                    {...register("curriculo")}    
+                    {...register("curriculo")}
                 />
+                <div className="relative w-full">
+                    <textarea
+                        placeholder={`Ex: Sou filho de Beto, conversei com Diarley ontem no posto de gasolina`}
 
-                <textarea
-                    rows={4}
-                    className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="Adicione informações que possam ser úteis, como indicações, preferência de atuação, etc."
-                    {...register("additionalMessage")}
-                />
-                <Button type="submit" disabled={isSubmitting} className={` hover:bg-green-600 text-white font-b ${isSubmitting? 'bg-yellow-600': 'bg-green-700' } transition-colors ease-in duration-200`}>
+                        id="addtionalMessage"
+                        className="w-full px-4 h-32 resize-none py-9 "
+                        {...register('additionalMessage')}
+                    >
+                    </textarea>
+                    <p className="absolute top-3 left-4 font-bold text-xs text-black">Informações úteis:</p>
+                </div>
+
+                {/*  <div className="relative w-full max-w-md">
+                    <textarea
+                        {...register("additionalMessage")}
+                        className={`w-full p-4 text-base text-gray-900 border rounded-md focus:ring-2  focus:border-transparent resize-none min-h-[100px] py-8
+                             ${isFocused || value
+                                ? 'top-1'
+                                : 'top-3'
+                            } 
+                            `}
+                        value={value}
+                        onChange={(e) => setValue(e.target.value)}
+                        onFocus={() => setIsFocused(true)}
+                        onBlur={() => setIsFocused(false)}
+                        placeholder="Suas qualidades, possíveis indicações, área que deseja atuar, etc"
+                        id="textArea"
+
+                    />
+                    <label
+                        htmlFor="textArea"
+                        className={`top-3 absolute left-3 transition-all duration-200 pointer-events-none font-bold text-gray-700 text-xs`}
+                    >
+                        Fale mais sobre você:
+                    </label>
+                </div> */}
+
+                <Button type="submit" disabled={isSubmitting} className={` hover:bg-green-600 text-white font-b ${isSubmitting ? 'bg-yellow-600' : 'bg-green-700'} transition-colors ease-in duration-200`}>
                     {isSubmitting ? 'Enviando...' : 'Enviar'}
                 </Button>
             </form>
-            <Modal isOpen={modalIsOpen} onClose={() => console.log('')}>
-                <h1>teste</h1>
-            </Modal>
+
         </div>
     );
 }

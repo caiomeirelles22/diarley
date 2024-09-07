@@ -5,7 +5,7 @@
         "fotoPerfilRetrato": "/diarley-e-wlad.jpeg",
         "fotoNomeCamara": "/next.svg",
         "sobreMimParagrafos": [
-            "Sou Diarley instrutor Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi saepe laudantium veritatis inventore ab totam, velit, hic aut iure perferendis blanditiis obcaecati? Voluptas quaerat quisquam animi dolore explicabo consequuntur deleniti!",
+            "Sou Diarley das Autoescolas, instrutor com mais de 15 anos de experiência na formação de motoristas. Ao longo da minha trajetória, tive a honra de preparar centenas de pessoas para enfrentarem o trânsito de maneira responsável e segura. Sempre acreditei que, além de ensinar a dirigir, minha missão é contribuir para um trânsito mais consciente.",
             "Minha vida toda sempre me dediquei a ajudar o próximo e decidi esse ano concorrer a Vereador na nossa cidade Campos dos Goytacazes!"
         ],
         "oqueEsperar": "Na Câmara dos vereadores irei atuar pela reconstrução, e acreditamos que isso só será possível se ninguém ficar para trás. Por isso, trabalhamos por leis que tenham como horizonte o combate às desigualdades.",
@@ -77,8 +77,8 @@
             },
             {
                 "title": "Infraestrutura",
-                "foto":"/ingra.jpeg",
-                "intro":"A infraestrutura é a base para o desenvolvimento de qualquer cidade. Como candidato a vereador, estou comprometido em promover investimentos e melhorias na infraestrutura para proporcionar uma melhor qualidade de vida para todos os cidadãos.",
+                "foto": "/ingra.jpeg",
+                "intro": "A infraestrutura é a base para o desenvolvimento de qualquer cidade. Como candidato a vereador, estou comprometido em promover investimentos e melhorias na infraestrutura para proporcionar uma melhor qualidade de vida para todos os cidadãos.",
                 "propostals": [
                     "Investimento em pavimentação, manutenção e ampliação de vias urbanas e rodovias.",
                     "Melhoria na iluminação pública para garantir mais segurança nas ruas e estradas.",
@@ -126,7 +126,6 @@
                 "src": "/diarley3.jpg",
                 "alt": "foto da galeria"
             }
-
         ],
         "links": [
             {

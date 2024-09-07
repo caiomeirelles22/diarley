@@ -17,8 +17,8 @@ export default function Home() {
       <Hero img={candidatos[0].fotoPerfilPaisagem} height={2592} width={4320} />
       <AboutMe fotoRetrato={candidatos[0].fotoPerfilRetrato} paragrafos={candidatos[0].sobreMimParagrafos} />
       <Focus focusItems={candidatos[0].focos} />
-      <Galery images={candidatos[0].galeria} />
       <Jobs />
+      <Galery images={candidatos[0].galeria} />
       <SocialMedias links={candidatos[0].links} />
       <KnowMore knowImage={candidatos[0].fotoPerfilRetrato} />
       <Footer links={candidatos[0].links}/>
