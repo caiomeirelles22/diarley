@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export function Focus({focusItems}: FocusItemsProps) {
     return (
-        <div id="focus" className="bg-[#f4f4f2] p-4 sm:p-6 flex flex-col gap-4 max-w-7xl mx-auto rounded-md">
+        <div id="focus" className="bg-[#f4f4f2] p-4 sm:p-6 flex flex-col gap-4 max-w-7xl mx-auto rounded-md w-full">
             <div className=" text-white w-full flex items-center justify-center flex-wrap gap-4">
                 <div>
                     <Image src="/title.png" alt="Diarley na Câmara" width={300} height={10}/>
