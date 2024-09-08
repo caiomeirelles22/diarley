@@ -2,8 +2,13 @@ const express = require("express");
 const cors = require("cors"); 
 const app = express();
 const nodemailer = require("nodemailer");
+require('dotenv').config();
+
 
 const multer = require("multer");
+
+console.log('email user',process.env.EMAIL_USER)
+
 
 // Habilita o CORS para todas as rotas
 app.use(cors());
@@ -16,8 +21,8 @@ const transporter = nodemailer.createTransport({
   port: 465,
   secure: true,
   auth: {
-    user: "caioa.m.meirelles22@gmail.com",
-    pass: "iptbycjhodifrele",
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS,
   },
 });
 
