@@ -9,16 +9,12 @@ import { Input } from "./Input";
 import { phoneMask } from "@/app/functions/phoneMask";
 import { Button } from "@/app/components/Button";
 import { FileInput } from "./Input/FileInput";
-import { Modal } from "@/app/components/Modal";
-import { useState } from "react";
 import { useRouter } from "next/navigation";
 
 export function Form() {
-    const [value, setValue] = useState('')
-    const [isFocused, setIsFocused] = useState(false)
+   
     const MAX_FILE_SIZE = 2000000;
     const ACCEPTED_IMAGE_TYPES = ["image/jpeg", "image/jpg", "image/png", "image/webp", "application/pdf", "application/msword", "application/vnd.openxmlformats-officedocument.wordprocessingml.document"];
-    const [modalIsOpen, setModalIsOpen] = useState(false)
     const router = useRouter()
 
     const formSchema = z.object({
@@ -64,7 +60,7 @@ export function Form() {
         formData.append("curriculo", data.curriculo[0]); // arquivo PDF
 
         try {
-            const response = await fetch("http://localhost:3002/send-curriculo", {
+            const response = await fetch("https://diarley-api.onrender.com/send-curriculo", {
                 method: "POST",
                 body: formData,
             });
@@ -78,9 +74,6 @@ export function Form() {
         }
     }
 
-    function openModal() {
-        setModalIsOpen(true)
-    }
 
     return (
         <div className="max-w-96 ">
@@ -138,32 +131,6 @@ export function Form() {
                     </textarea>
                     <p className="absolute top-3 left-4 font-bold text-xs text-black">Informações úteis:</p>
                 </div>
-
-                {/*  <div className="relative w-full max-w-md">
-                    <textarea
-                        {...register("additionalMessage")}
-                        className={`w-full p-4 text-base text-gray-900 border rounded-md focus:ring-2  focus:border-transparent resize-none min-h-[100px] py-8
-                             ${isFocused || value
-                                ? 'top-1'
-                                : 'top-3'
-                            } 
-                            `}
-                        value={value}
-                        onChange={(e) => setValue(e.target.value)}
-                        onFocus={() => setIsFocused(true)}
-                        onBlur={() => setIsFocused(false)}
-                        placeholder="Suas qualidades, possíveis indicações, área que deseja atuar, etc"
-                        id="textArea"
-
-                    />
-                    <label
-                        htmlFor="textArea"
-                        className={`top-3 absolute left-3 transition-all duration-200 pointer-events-none font-bold text-gray-700 text-xs`}
-                    >
-                        Fale mais sobre você:
-                    </label>
-                </div> */}
-
                 <Button type="submit" disabled={isSubmitting} className={` hover:bg-green-600 text-white font-b ${isSubmitting ? 'bg-yellow-600' : 'bg-green-700'} transition-colors ease-in duration-200`}>
                     {isSubmitting ? 'Enviando...' : 'Enviar'}
                 </Button>
