@@ -24,7 +24,7 @@ export function AboutMe({ fotoRetrato, paragrafos }: AboutMeProps) {
                 {paragrafos.map((paragrafo, key) => (
                     <p key={key} className="text-[#191013]">{paragrafo}</p>
                 ))}
-                <Anchor href="form-section" className="text-base text-[#f4f4f2] mt-auto">
+                <Anchor href="form-section">
                     Saiba Mais!
                 </Anchor>
             </div>
