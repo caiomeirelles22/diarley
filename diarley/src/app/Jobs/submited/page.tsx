@@ -35,7 +35,7 @@ export default function SubmitedPage() {
         recycle={false}
         numberOfPieces={200}
       />
-      <div className="w-[350px] text-center bg-white p-4 flex flex-col gap-2">
+      <div className="w-[350px] text-center bg-white p-4 flex flex-col gap-2 text-gray-900">
         <div>
           <h2 className="text-2xl font-bold">Parabéns!</h2>
         </div>

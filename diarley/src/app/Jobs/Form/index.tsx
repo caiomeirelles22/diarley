@@ -125,7 +125,7 @@ export function Form() {
                         placeholder={`Ex: Sou filho de Beto, conversei com Diarley ontem no posto de gasolina`}
 
                         id="addtionalMessage"
-                        className="w-full px-4 h-32 resize-none py-9 "
+                        className="w-full px-4 h-32 resize-none py-9 text-gray-500 "
                         {...register('additionalMessage')}
                     >
                     </textarea>
