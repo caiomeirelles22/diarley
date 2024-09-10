@@ -19,7 +19,7 @@ export function AboutMe({ fotoRetrato, paragrafos }: AboutMeProps) {
                     alt="hero"
                 />  
             </div>
-            <div className="w-fit min-w-80 flex flex-col gap-4 max-w-xl text-sm sm:text-xl mx-auto h-auto">
+            <div className="w-fit flex flex-col gap-4 max-w-xl text-sm sm:text-xl mx-auto h-auto">
                 <h2 className="text-[#243a69] font-bold">Sobre mim!</h2>
                 {paragrafos.map((paragrafo, key) => (
                     <p key={key} className="text-[#191013]">{paragrafo}</p>
